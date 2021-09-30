@@ -1,4 +1,12 @@
-local Notifications = NotificationsBool
+local NotificationsBool = false
+
+wait(1)
+
+local thing = loadfile("WetHubNotificationsBool.txt")()
+
+wait(1)
+
+print("23598")
 
 if game.PlaceId == 2753915549 then
     
@@ -7,7 +15,7 @@ warn("===============================")
 print("Blox Fruits Detected!")
 print("Loading Notifications")
 
-if Notifications then
+if NotificationsBool then
 game.StarterGui:SetCore("SendNotification",  {
     Title = "Version 3";
     Text = "If anything is not working then tell me in the discord";
