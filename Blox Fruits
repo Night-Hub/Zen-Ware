@@ -13,9 +13,9 @@ if game.PlaceId == 2753915549 then
 warn("")
 warn("===============================")
 print("Blox Fruits Detected!")
-print("Loading Notifications")
 
 if NotificationsBool then
+print("Loading Notifications")
 game.StarterGui:SetCore("SendNotification",  {
     Title = "Version 3";
     Text = "If anything is not working then tell me in the discord";
@@ -23,8 +23,8 @@ game.StarterGui:SetCore("SendNotification",  {
     Duration = 20;
     Button1 = "Alright";
     Callback = NotificationBindable; })
-end
 print("Notifications Loaded!")
+end
 
 print("The Script Will Now Proceed To Load!")
 warn("===============================")
