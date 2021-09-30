@@ -1,31 +1,19 @@
-local NotificationsBool = false
-
-wait(1)
-
-local thing = loadfile("WetHubNotificationsBool.txt")()
 
 wait(1)
 
 print("23598")
 
 if game.PlaceId == 2753915549 then
+
+local NotificationsTextFolder = isfile("WetHubNotificationsBool.txt")
+
+if not NotificationsTextFolder then
+writefile("WetHubNotificationsBool.txt", 'print("Loading Notifications") game.StarterGui:SetCore("SendNotification",  { Title = "Version 3"; Text = "If anything is not working then tell me in the discord"; Icon = "rbxthumb://type=Asset&id=7605437571&w=150&h=150"; Duration = 20; Button1 = "Alright"; Callback = NotificationBindable; }) print("Notifications Loaded!")')
+end
     
 warn("")
 warn("===============================")
 print("Blox Fruits Detected!")
-
-if NotificationsBool then
-print("Loading Notifications")
-game.StarterGui:SetCore("SendNotification",  {
-    Title = "Version 3";
-    Text = "If anything is not working then tell me in the discord";
-    Icon = "rbxthumb://type=Asset&id=7605437571&w=150&h=150";
-    Duration = 20;
-    Button1 = "Alright";
-    Callback = NotificationBindable; })
-print("Notifications Loaded!")
-end
-
 print("The Script Will Now Proceed To Load!")
 warn("===============================")
 warn("")
