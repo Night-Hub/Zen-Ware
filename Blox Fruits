@@ -1,7 +1,7 @@
 
 wait(1)
 
-print("23598")
+print("2")
 
 if game.PlaceId == 2753915549 then
 
